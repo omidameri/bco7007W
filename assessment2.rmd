@@ -1,0 +1,34 @@
+## Assesment 2
+
+In this assessment you will analyse tweets on a topic of your choice. You will explore the tweets as well as identify topics that people talk about in those tweets using topic modeling.
+
+The general breakdown of the assessment is:
+
+1. Tweets collecting (data mining) - should be done through a number of runs of the data mining script
+2. Exploration and visualization of data (you can start doing this step as soon as you have your first data and then apply the same coding to a large dataset (=full dataset) to write up your insights
+3. Topic modeling and visualization
+4. Discuss your insights from steps 2-4 and identify distinct topics in your dataset
+
+###  Tweets collecting (step 1):
+
+Select the topic of your choice to research. The topic needs to be popular to have large number of tweets = many people talk about that topic on Twitter.
+
+Run the script discussed in the class to collect tweets: you can use either topic as a keyword or hashtag (#keyword) for your query.
+
+**Run your script every 3 days and save each dataset under a different filename (e.g. date_month.csv)**
+
+Save your data from each run of the script as a separate file (see class notes)
+You collect your tweets in weeks 2-4.
+
+After you completed all data runs (end of week 4), you need to merge the files into one dataset (see class notes).
+
+Remove duplicate entries from the dataset to have only unique entries (see class notes)
+
+
+### Exploration and visualization of data
+
+1.	Present the first 10 tweets from your dataset using `kable()`
+2.	Visualise the frequency of your tweets
+3.	Identify top tweeting locations and present the first 10
+4.	Identify the most retweeted tweets (top 20)
+5. 
