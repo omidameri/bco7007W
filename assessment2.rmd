@@ -27,15 +27,15 @@ Remove duplicate entries from the dataset to have only unique entries (see class
 
 This step is based on a class workshop and uses `rtweet` package
 
-1.	Present the first 10 tweets from your dataset using `kable()`. Use `kable()` in all steps to present the tabular data
-2.	Visualise the frequency of your tweets
-3.	Identify top tweeting locations and present the first 10. Write 2-3 sentences on your insights from this.
-4.	Identify the most retweeted tweets and present top 20. Write 2-3 sentences on your insights from this
-5.	Identify the most liked tweets and present the first 15. Write 2-3 sentences on your insights from this
-6.	Identify top tweeters in your dataset and present the first 5. Write a sentence on your insights from this
-7.	Identify top emojis in your dataset and present the first 10.
-8.	Identify top hashtags in your dataset and present the first 10. Write 2-3 sentences on your insights from this
-9.	Identify top mentions in your dataset and present the first 10. Write 2-3 sentences on your insights from this
+1. Present the first 10 tweets from your dataset using `kable()`. Use `kable()` in all steps to present the tabular data
+2. Visualise the frequency of your tweets
+3. Identify top tweeting locations and present the first 10. Write 2-3 sentences on your insights from this.
+4. Identify the most retweeted tweets and present top 20. Write 2-3 sentences on your insights from this
+5. Identify the most liked tweets and present the first 15. Write 2-3 sentences on your insights from this
+6. Identify top tweeters in your dataset and present the first 5. Write a sentence on your insights from this
+7. Identify top emojis in your dataset and present the first 10.
+8. Identify top hashtags in your dataset and present the first 10. Write 2-3 sentences on your insights from this
+9. Identify top mentions in your dataset and present the first 10. Write 2-3 sentences on your insights from this
 10. Get a list of all accounts that the top tweeter follows and present the first 5
 11. Get a list of followers of the top tweeter and present the first 5
 
