@@ -6,8 +6,7 @@ The general breakdown of the assessment is:
 
 1. Tweets collecting (data mining) - should be done through a number of runs of the data mining script
 2. Exploration and visualization of data (you can start doing this step as soon as you have your first data and then apply the same coding to a large dataset (=full dataset) to write up your insights
-3. Topic modeling and visualization
-4. Discuss your insights from steps 2-4 and identify distinct topics in your dataset
+3. Topic modeling and visualization. Discuss your insights and identify distinct topics in your dataset
 
 ###  Tweets collecting (step 1):
 
@@ -24,11 +23,37 @@ After you completed all data runs (end of week 4), you need to merge the files i
 
 Remove duplicate entries from the dataset to have only unique entries (see class notes)
 
-
 ### Exploration and visualization of data
 
-1.	Present the first 10 tweets from your dataset using `kable()`
+This step is based on a class workshop and uses `rtweet` package
+
+1.	Present the first 10 tweets from your dataset using `kable()`. Use `kable()` in all steps to present the tabular data
 2.	Visualise the frequency of your tweets
-3.	Identify top tweeting locations and present the first 10
-4.	Identify the most retweeted tweets (top 20)
-5. 
+3.	Identify top tweeting locations and present the first 10. Write 2-3 sentences on your insights from this.
+4.	Identify the most retweeted tweets and present top 20. Write 2-3 sentences on your insights from this
+5.	Identify the most liked tweets and present the first 15. Write 2-3 sentences on your insights from this
+6.	Identify top tweeters in your dataset and present the first 5. Write a sentence on your insights from this
+7.	Identify top emojis in your dataset and present the first 10.
+8.	Identify top hashtags in your dataset and present the first 10. Write 2-3 sentences on your insights from this
+9.	Identify top mentions in your dataset and present the first 10. Write 2-3 sentences on your insights from this
+10. Get a list of all accounts that the top tweeter follows and present the first 5
+11. Get a list of followers of the top tweeter and present the first 5
+
+### Topic modeling and visualization
+
+This step is based on a class workshop and uses `topicmodels` package
+
+1. Preprocess text from your dataset to tidy text and convert it to DocumentTermMatrix
+2. Use `LDA()` function to create an LDA model. Experiment with different number of topics (`k=`).
+Visualise the top 10 words from each topic to brainstorm on possible topics that they cover.
+
+Write 2-3 sentences comparing LDA models you generated with different number of topics. Explain which model you think best covers your data. 
+
+Come to a conclusion about the topics that your dataset presents.
+
+### What to submit
+
+- .rmd file with your work addressing Steps 2-4
+-  .r script with your data mining
+-  datasets your saved on each run and the final dataset
+-  template with your details and link to your GitHub repo
