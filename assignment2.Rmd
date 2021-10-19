@@ -1,0 +1,97 @@
+---
+title: "bco7007 assignment2"
+author: "Maria Prokofieva"
+date: "19/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(tidytext)
+library(rtweet)
+
+#LATER NEED TO CHANGE THE FILE TO THE FULL+MERGED DATASET
+tweets<-read_csv("12_10_2021.csv")
+```
+
+
+### Exploration and visualization of data
+
+This step is based on a class workshop and uses `rtweet` package
+
+1. Present the first 10 tweets from your dataset using `kable()`. Use `kable()` in all steps to present the tabular data
+
+```{r}
+knitr::kable(tweets[1:10,1:8])
+```
+
+2. Visualise the frequency of your tweets
+
+```{r}
+ts_plot(tweets, "hours") +
+  labs(x = NULL, y = NULL,
+       title = "Frequency of tweets with coffee",
+       subtitle = paste0(format(min(tweets$created_at), "%d %B %Y"), " to ", format(max(tweets$created_at),"%d %B %Y")),
+       caption = "Coffee tweets Data collected from Twitter") +
+  theme_minimal()
+```
+
+3. Identify top tweeting locations and present the first 10. Write 2-3 sentences on your insights from this.
+
+```{r}
+
+tweets %>% 
+  filter(!is.na(place_full_name)) %>% 
+  count(place_full_name, sort = TRUE) %>% 
+  top_n(10)
+
+```
+
+4. Identify the most retweeted tweets and present top 20. Write 2-3 sentences on your insights from this
+```{r}
+#line 84
+```
+
+
+5. Identify the most liked tweets and present the first 15. Write 2-3 sentences on your insights from this
+```{r}
+#line116
+```
+
+
+6. Identify top tweeters in your dataset and present the first 5. Write a sentence on your insights from this
+```{r}
+#line129
+```
+
+
+7. Identify top emojis in your dataset and present the first 10.
+
+```{r}
+library(emo)
+tweets %>%
+  mutate(emoji = ji_extract_all(text)) %>%
+  unnest(cols = c(emoji)) %>%
+  count(emoji, sort = TRUE) %>%
+  top_n(10)
+```
+
+8. Identify top hashtags in your dataset and present the first 10. Write 2-3 sentences on your insights from this
+9. Identify top mentions in your dataset and present the first 10. Write 2-3 sentences on your insights from this
+10. Get a list of all accounts that the top tweeter follows and present the first 5
+11. Get a list of followers of the top tweeter and present the first 5
+
+### Topic modeling and visualization
+
+This step is based on a class workshop and uses `topicmodels` package
+
+1. Preprocess text from your dataset to tidy text and convert it to DocumentTermMatrix
+2. Use `LDA()` function to create an LDA model. Experiment with different number of topics (`k=`).
+Visualise the top 10 words from each topic to brainstorm on possible topics that they cover.
+
+Write 2-3 sentences comparing LDA models you generated with different number of topics. Explain which model you think best covers your data. 
+
+Come to a conclusion about the topics that your dataset presents.
+
