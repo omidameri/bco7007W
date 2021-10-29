@@ -1,1 +1,12 @@
+## Assesment 1
 
+In this assessment you ask to use AWS to complete image recognition tasks. You need to use the material of the tutorial on AWS to complete it. You need to make sure that you understand each step involved in each task.
+
+The general breakdown of the assessment is:
+
+1. Setup your AWS account with the Free Tier (as shown in the setup document)
+2. Setup your AWS access in RStudio (as shown in the tutorial)
+3. Review and complete image recognition for Text in Image task
+4. Review and complete image recognition for Compare Faces task
+
+You need to run your script in the .R file (not .rmd) and submit it to Dropbox at VU Collaborate as well as push to the assigned GitHub repo
