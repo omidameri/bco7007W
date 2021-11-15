@@ -23,6 +23,8 @@ After you completed all data runs (end of week 4), you need to merge the files i
 
 Remove duplicate entries from the dataset to have only unique entries (see class notes)
 
+Upload your final dataset to a shared file storage (e.g. your free AWS S3 storage you used for Assignment 1), generate a shared link and use this link to load your dataset in `read_csv()` function, e.g.
+
 ### Exploration and visualization of data
 
 This step is based on a class workshop and uses `rtweet` package
@@ -53,7 +55,7 @@ Come to a conclusion about the topics that your dataset presents.
 
 ### What to submit
 
-- .rmd file with your work addressing Steps 2-4
+- .rmd and .hmtl (knitted .rmd) file with your work addressing Steps 2-4
 -  .r script with your data mining
--  datasets your saved on each run and the final dataset
+-  datasets your saved on each run and the final dataset (upload your dataset to VUCollaborate)
 -  template with your details and link to your GitHub repo
