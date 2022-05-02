@@ -8,7 +8,19 @@ The general breakdown of the assessment is:
 2. Exploration and visualization of data (you can start doing this step as soon as you have your first data and then apply the same coding to a large dataset (=full dataset) to write up your insights
 3. Topic modeling and visualization. Discuss your insights and identify distinct topics in your dataset
 
-###  Tweets collecting (step 1):
+This project is done consistently over the course of the unit with installment submission to review the progres:
+
+1. Submission in week 2: tasks 2.1 and 2.2 for the tweets collected during week 2.
+2. Submission in week 3: tasks 2.1 and 2.2 for tweets collecting during week 3.
+3. Submission in week 10: tasks 2.1, 2.2, 2.2 for tweets collected during week 2-10.
+
+For each submission, include:
+- .csv file with tweets
+- .rmd document with completed tasks
+-  .r script with your data mining for this submission
+-  template per VUCollaborate
+
+###  2.1 Tweets collecting (step 1):
 
 Select the topic of your choice to research. The topic needs to be popular to have large number of tweets = many people talk about that topic on Twitter.
 
@@ -25,7 +37,7 @@ Remove duplicate entries from the dataset to have only unique entries (see class
 
 Upload your final dataset to a shared file storage (e.g. your free AWS S3 storage you used for Assignment 1), generate a shared link and use this link to load your dataset in `read_csv()` function, e.g.
 
-### Exploration and visualization of data
+### 2.2. Exploration and visualization of data
 
 This step is based on a class workshop and uses `rtweet` package
 
@@ -41,7 +53,7 @@ This step is based on a class workshop and uses `rtweet` package
 10. Get a list of all accounts that the top tweeter follows and present the first 5
 11. Get a list of followers of the top tweeter and present the first 5
 
-### Topic modeling and visualization
+### 2.3. Topic modeling and visualization
 
 This step is based on a class workshop and uses `topicmodels` package
 
@@ -57,5 +69,5 @@ Come to a conclusion about the topics that your dataset presents.
 
 - .rmd and .hmtl (knitted .rmd) file with your work addressing Steps 2-4
 -  .r script with your data mining
--  datasets your saved on each run and the final dataset (upload your dataset to VUCollaborate)
+-  .csv datasets your saved on each run and the final dataset (upload your dataset to VUCollaborate)
 -  template with your details and link to your GitHub repo
