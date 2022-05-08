@@ -1,4 +1,4 @@
-## Assesment 2
+## Assesment 1
 
 In this assessment you will analyse tweets on a topic of your choice. You will explore the tweets as well as identify topics that people talk about in those tweets using topic modeling.
 
@@ -20,7 +20,7 @@ For each submission, include:
 -  .r script with your data mining for this submission
 -  template per VUCollaborate
 
-###  2.1 Tweets collecting (step 1):
+###  1.1 Tweets collecting (step 1):
 
 Select the topic of your choice to research. The topic needs to be popular to have large number of tweets = many people talk about that topic on Twitter.
 
@@ -37,7 +37,7 @@ Remove duplicate entries from the dataset to have only unique entries (see class
 
 Upload your final dataset to a shared file storage (e.g. your free AWS S3 storage you used for Assignment 1), generate a shared link and use this link to load your dataset in `read_csv()` function, e.g.
 
-### 2.2. Exploration and visualization of data
+### 1.2. Exploration and visualization of data
 
 This step is based on a class workshop and uses `rtweet` package
 
@@ -53,7 +53,7 @@ This step is based on a class workshop and uses `rtweet` package
 10. Get a list of all accounts that the top tweeter follows and present the first 5
 11. Get a list of followers of the top tweeter and present the first 5
 
-### 2.3. Topic modeling and visualization
+### 1.3. Topic modeling and visualization
 
 This step is based on a class workshop and uses `topicmodels` package
 
